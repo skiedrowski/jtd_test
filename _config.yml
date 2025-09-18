@@ -2,8 +2,6 @@ title: Just the Docs Test
 description: Testing flavoured Jekyll/Just-The-Doc site
 theme: just-the-docs
 
-url: https://skiedrowski.github.io/jtd_test
-
 aux_links: # remove if you don't want this link to appear on your pages
   Template Repository: https://github.com/skiedrowski/jtd_test
 
