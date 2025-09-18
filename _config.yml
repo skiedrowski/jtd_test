@@ -6,3 +6,13 @@ url: https://skiedrowski.github.io/jtd_test
 
 aux_links: # remove if you don't want this link to appear on your pages
   Template Repository: https://github.com/skiedrowski/jtd_test
+
+collections:
+  shared:
+    output: true
+  bmx:
+    output: false
+  dba:
+    output: false
+  mpk:
+    output: false
