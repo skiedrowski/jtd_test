@@ -42,17 +42,17 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Build BMX with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --config _config.yml,_config.bmx.yml --destination _site/bmx
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}/bmx" --config _config.yml,_config.bmx.yml --destination _site/bmx
         env:
           JEKYLL_ENV: production
       - name: Upload BMX artifact
         # Automatically uploads an artifact from the './_site' directory by default
         uses: actions/upload-pages-artifact@v4
         with:
-            path: ./_site/dba
+            path: ./_site/bmx
       - name: Build DBA with Jekyll
         # Outputs to the './_site' directory by default
-        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}" --config _config.yml,_config.dba.yml --destination _site/dba
+        run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}/dba" --config _config.yml,_config.dba.yml --destination _site/dba
         env:
           JEKYLL_ENV: production
       - name: Upload DBA artifact
